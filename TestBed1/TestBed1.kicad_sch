@@ -270,7 +270,17 @@
 	)
 	(bus
 		(pts
-			(xy 76.2 132.08) (xy 85.09 132.08)
+			(xy 67.31 121.92) (xy 67.31 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5da72b30-4771-4297-ba67-863e4f138c3b")
+	)
+	(bus
+		(pts
+			(xy 76.2 132.08) (xy 92.71 132.08)
 		)
 		(stroke
 			(width 0)
@@ -300,6 +310,16 @@
 	)
 	(bus
 		(pts
+			(xy 67.31 113.03) (xy 71.12 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "895f70e3-5bd4-4be1-b6b0-64e6bfad7887")
+	)
+	(bus
+		(pts
 			(xy 74.93 157.48) (xy 74.93 144.78)
 		)
 		(stroke
@@ -320,6 +340,16 @@
 	)
 	(bus
 		(pts
+			(xy 71.12 113.03) (xy 71.12 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2cff8f9-1d5f-4b7e-a533-b613abc8f254")
+	)
+	(bus
+		(pts
 			(xy 64.77 157.48) (xy 64.77 144.78)
 		)
 		(stroke
@@ -328,60 +358,28 @@
 		)
 		(uuid "e96d528e-b831-4a62-a642-8409be1f13b7")
 	)
-	(text "TODO what comes from controller? 12V? or 5V? design to accept up to 24v?"
-		(exclude_from_sim no)
-		(at 112.268 55.118 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a519b22d-88f1-496d-97f7-f047cec97626")
-	)
-	(text "TODO LEDs?"
-		(exclude_from_sim no)
-		(at 83.82 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "e287bd61-666d-48de-bfcf-afca4ed8879f")
-	)
-	(text "TODO Power"
-		(exclude_from_sim no)
-		(at 135.128 58.166 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "e6b1ef1b-4657-4816-9424-6e148b77054d")
-	)
-	(text "TODO Power filter?"
-		(exclude_from_sim no)
-		(at 134.874 60.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f4b1093e-412b-4c64-81c2-07ee43fd06b3")
-	)
-	(label "CANH"
-		(at 57.15 121.92 90)
-		(fields_autoplaced yes)
+	(label "CAN_VCC"
+		(at 107.95 83.82 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "5d7043b0-eb30-450a-9c18-12de9aaa0760")
+		(uuid "0d7fec8a-f792-4d7f-8cae-8ce9a02074dd")
+	)
+	(label "CANH"
+		(at 76.2 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6afaf8ec-a74f-4dc4-b716-d174fc23772e")
 	)
 	(label "CANH"
 		(at 152.4 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -390,20 +388,8 @@
 		)
 		(uuid "7adaa0b1-29fa-4788-b423-81e6c8c11eaa")
 	)
-	(label "CANL"
-		(at 59.69 121.92 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "85eb2789-4e00-4f1a-be9a-31a1dba6aa6a")
-	)
 	(label "GND"
 		(at 152.4 66.04 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -412,9 +398,8 @@
 		)
 		(uuid "8ae71e7a-e93f-4fd3-9a97-d17f8decbaf7")
 	)
-	(label "VCC"
+	(label "CAN_VCC"
 		(at 152.4 58.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -424,8 +409,17 @@
 		(uuid "96089649-1700-4fd4-be02-48ba9908c177")
 	)
 	(label "CANL"
+		(at 76.2 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e4e6f23e-89ff-46d9-8f03-85bf7583af48")
+	)
+	(label "CANL"
 		(at 152.4 63.5 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -579,30 +573,88 @@
 			)
 			(uuid "8de6060a-4fd0-4361-9d57-0904ce887fde")
 		)
-		(pin "CANH" input
-			(at 57.15 121.92 90)
+		(pin "CANComs" input
+			(at 67.31 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "19a2088c-b55b-442e-a9e7-e0be0385f72d")
-		)
-		(pin "CANL" input
-			(at 59.69 121.92 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "709ecddc-f9fb-4d82-b398-f7829d10961c")
+			(uuid "55ce8364-fa74-4880-bd7f-daf5cd551449")
 		)
 		(instances
 			(project "TestBed1"
 				(path "/1011cb81-baf2-4a82-93dd-e89e67a76dd8"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 46.99 83.82)
+		(size 29.21 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3bb0df94-f6c0-4411-8c7f-d20d6a14bb72")
+		(property "Sheetname" "CANBus"
+			(at 46.99 83.1084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CANBus.kicad_sch"
+			(at 46.99 104.7246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CANComs" input
+			(at 71.12 104.14 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f62800ea-b31a-4b26-be99-325f36c2e6e3")
+		)
+		(pin "CANH" input
+			(at 76.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "54debb3d-55b2-48ba-b487-b596964b65c6")
+		)
+		(pin "CANL" input
+			(at 76.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3d326f6f-c187-450a-bc0f-048dee51841c")
+		)
+		(instances
+			(project "TestBed1"
+				(path "/1011cb81-baf2-4a82-93dd-e89e67a76dd8"
+					(page "5")
 				)
 			)
 		)
@@ -671,6 +723,102 @@
 			(project "TestBed1"
 				(path "/1011cb81-baf2-4a82-93dd-e89e67a76dd8"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 95.25 83.82)
+		(size 22.86 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "548a5858-c077-4c03-8088-d3b70cd8af24")
+		(property "Sheetname" "Power"
+			(at 95.25 83.1084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 95.25 104.7246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CAN_VCC" input
+			(at 107.95 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2ea5808f-9003-47f9-aa68-314554739e69")
+		)
+		(instances
+			(project "TestBed1"
+				(path "/1011cb81-baf2-4a82-93dd-e89e67a76dd8"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 92.71 121.92)
+		(size 20.32 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8650716f-8583-427e-8f9a-d8dbcb30c315")
+		(property "Sheetname" "LEDs"
+			(at 92.71 121.2084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LEDs.kicad_sch"
+			(at 92.71 142.8246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LEDs" input
+			(at 92.71 132.08 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "60242dfd-509e-4c68-8b3d-a78f0bc78fe4")
+		)
+		(instances
+			(project "TestBed1"
+				(path "/1011cb81-baf2-4a82-93dd-e89e67a76dd8"
+					(page "4")
 				)
 			)
 		)

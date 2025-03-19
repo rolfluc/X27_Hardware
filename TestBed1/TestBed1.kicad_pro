@@ -586,6 +586,18 @@
     [
       "35da2878-5cb4-4f64-8446-b7adc3d3bd92",
       "MCU"
+    ],
+    [
+      "8650716f-8583-427e-8f9a-d8dbcb30c315",
+      "LEDs"
+    ],
+    [
+      "3bb0df94-f6c0-4411-8c7f-d20d6a14bb72",
+      "CANBus"
+    ],
+    [
+      "548a5858-c077-4c03-8088-d3b70cd8af24",
+      "Power"
     ]
   ],
   "text_variables": {}

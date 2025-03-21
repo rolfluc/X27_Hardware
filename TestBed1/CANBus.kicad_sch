@@ -1059,6 +1059,16 @@
 		)
 		(uuid "078d973b-fbb8-4e8d-ae03-aeb952057c93")
 	)
+	(label "CAN_TXD"
+		(at 87.63 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0cee4480-71f3-47fc-80c4-33beee69db53")
+	)
 	(label "CANComs"
 		(at 262.89 21.59 0)
 		(effects
@@ -1158,6 +1168,16 @@
 			(justify left bottom)
 		)
 		(uuid "a3cff2f9-6756-4e5f-817c-e365b3919d7a")
+	)
+	(label "CAN_RXD"
+		(at 90.17 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c1342f22-6c5d-4d02-8418-84411bba77fd")
 	)
 	(label "CANComs"
 		(at 273.05 16.51 180)
@@ -1314,6 +1334,73 @@
 			(project "TestBed1"
 				(path "/1011cb81-baf2-4a82-93dd-e89e67a76dd8/3bb0df94-f6c0-4411-8c7f-d20d6a14bb72"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 87.63 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d26d662-9ccb-49bd-af48-6c2794107cea")
+		(property "Reference" "TP6"
+			(at 90.17 52.5779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 90.17 55.1179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 92.71 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 87.63 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ee5a27a-c297-4ced-a4cc-60445f4253e8")
+		)
+		(instances
+			(project "TestBed1"
+				(path "/1011cb81-baf2-4a82-93dd-e89e67a76dd8/3bb0df94-f6c0-4411-8c7f-d20d6a14bb72"
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -1537,7 +1624,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "0.1u"
 			(at 118.11 93.9799 0)
 			(effects
 				(font
@@ -1546,7 +1633,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 115.2652 96.52 0)
 			(effects
 				(font
@@ -1607,7 +1694,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "0.1u"
 			(at 167.64 55.8799 0)
 			(effects
 				(font
@@ -1616,7 +1703,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 164.7952 58.42 0)
 			(effects
 				(font
@@ -1864,7 +1951,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9714f3cc-c4be-4ab8-a42c-fdc8317ef0f0")
 		(property "Reference" "R1"
 			(at 180.34 77.4699 0)
@@ -1875,8 +1961,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 180.34 80.0099 0)
+		(property "Value" "120"
+			(at 177.8 80.772 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1884,7 +1970,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 176.022 78.74 90)
 			(effects
 				(font
@@ -1954,7 +2040,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 204.47 68.58 0)
 			(effects
 				(font
@@ -1995,6 +2081,73 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
+		(at 90.17 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7c6b8fa-fb2d-49e2-b3a0-cf5dd5653b5a")
+		(property "Reference" "TP5"
+			(at 92.71 69.0879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 92.71 71.6279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 95.25 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 90.17 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97db967c-e900-4398-8188-b505f4e56db9")
+		)
+		(instances
+			(project "TestBed1"
+				(path "/1011cb81-baf2-4a82-93dd-e89e67a76dd8/3bb0df94-f6c0-4411-8c7f-d20d6a14bb72"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
 		(at 199.39 85.09 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2021,7 +2174,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 194.31 85.09 0)
 			(effects
 				(font

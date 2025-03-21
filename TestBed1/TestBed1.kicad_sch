@@ -358,28 +358,8 @@
 		)
 		(uuid "e96d528e-b831-4a62-a642-8409be1f13b7")
 	)
-	(text "TODO any filtering on CAN VCC?"
-		(exclude_from_sim no)
-		(at 119.888 57.404 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2c9b41ac-31d6-47a3-96dd-57fd4e8021ae")
-	)
-	(text "TODO Buzzer?"
-		(exclude_from_sim no)
-		(at 157.988 122.174 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "513eff02-068b-4cc3-a78b-84e70752e2f8")
-	)
 	(label "CAN_VCC"
-		(at 107.95 83.82 90)
+		(at 105.41 83.82 90)
 		(effects
 			(font
 				(size 1.27 1.27)

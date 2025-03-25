@@ -1410,7 +1410,7 @@
 	(footprint "X27:SFH_5711-23-Z"
 		(layer "F.Cu")
 		(uuid "9442d269-8f71-4c8a-b3e4-7a23f6056045")
-		(at 90.209804 40.359804)
+		(at 90.209804 39.851804)
 		(property "Reference" "U7"
 			(at 1.924 3.224 0)
 			(unlocked yes)
@@ -6546,7 +6546,7 @@
 	(footprint "Package_QFP:LQFP-32_7x7mm_P0.8mm"
 		(layer "B.Cu")
 		(uuid "40ffcccc-f4bf-42b9-8426-2ffc25a9a83f")
-		(at 173.825 67.5 180)
+		(at 180.086 65.024 180)
 		(descr "LQFP, 32 Pin (https://www.nxp.com/docs/en/package-information/SOT358-1.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "LQFP QFP")
 		(property "Reference" "U1"
@@ -9979,7 +9979,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 		(layer "B.Cu")
 		(uuid "7829f1d8-00ae-401b-b8d9-a97d575ba905")
-		(at 180.2045 67.564)
+		(at 186.4655 65.088)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C4"
@@ -12949,7 +12949,7 @@
 	(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm"
 		(layer "B.Cu")
 		(uuid "cdab23aa-0b23-49ed-b3d7-f6a0b5786217")
-		(at 181.026 69.088 90)
+		(at 186.601 66.612 90)
 		(descr "SMD rectangular pad as test Point, square 1.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP7"

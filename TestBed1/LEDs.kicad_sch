@@ -2085,17 +2085,6 @@
 		)
 		(uuid "2f7fcb92-8c5f-42ef-9a8a-1f91d7eb2444")
 	)
-	(label "D1"
-		(at 161.29 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "310b74dd-1a72-4a13-8048-a0c68ae13ca8")
-	)
 	(label "D2"
 		(at 161.29 62.23 0)
 		(fields_autoplaced yes)
@@ -2140,7 +2129,7 @@
 		)
 		(uuid "466e16c3-171b-4047-a321-03add7b6a719")
 	)
-	(label "D3"
+	(label "D1"
 		(at 161.29 64.77 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2149,7 +2138,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4c1cf1ed-708d-41eb-ab31-e829dbb9800c")
+		(uuid "480472ba-6578-450a-8314-7f4bf217d8a2")
 	)
 	(label "AMB_OUT"
 		(at 115.57 147.32 0)
@@ -2238,6 +2227,17 @@
 			(justify left bottom)
 		)
 		(uuid "a1eeb72e-1720-4510-94df-2cd695716bde")
+	)
+	(label "D3"
+		(at 161.29 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c2b89144-f36b-4b82-83dc-a0e4786d4a35")
 	)
 	(label "D3"
 		(at 107.95 107.95 270)
